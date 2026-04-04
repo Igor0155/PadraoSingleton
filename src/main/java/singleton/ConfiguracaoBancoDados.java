@@ -2,14 +2,11 @@ package singleton;
 
 public class ConfiguracaoBancoDados {
 
-    // Construtor privado para evitar a instanciação externa
     private ConfiguracaoBancoDados() {
     };
 
-    // Instância estática e única da própria classe
     private static ConfiguracaoBancoDados instance = new ConfiguracaoBancoDados();
 
-    // Ponto de acesso global à instância
     public static ConfiguracaoBancoDados getInstance() {
         return instance;
     }
